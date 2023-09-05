@@ -49,9 +49,9 @@ signed main(){
       ios_base::sync_with_stdio(0);cin.tie(0);
       int t = 1;
 //	  prime_sieve();
-      #ifdef mtc
+      
       cin >> t;
-      #endif
+      
       for(int i=1;i<=t;i++){
       	#ifdef case
         cout << "Case #" << i << ": ";
