@@ -1,6 +1,6 @@
 // C++ program to implement the approach
 #include <bits/stdc++.h>
-
+using namespace std;
 #define pb              push_back
 #define int             long long
 #define ff              first
@@ -10,10 +10,13 @@
 #define print(x)        cout << #x << " = " << x << "\n";
 #define ins             insert
 
-
-using namespace std;
+typedef pair<int,int> pi;
+using ll =long long;
 using vi = vector<int>;
+using vli = vector<long long>;
 using vvi = vector<vector<int>>;
+using vpi = vector<pair<int,int>>;
+using vvpi = vector<vector<pair<int,int>>>;
 
 int mod = 1e9+7;
 int inf = 1e18;
@@ -33,30 +36,40 @@ void prime_sieve(){
 	}
 }
 
+bool cmp(pi &a,pi &b){
+	if(a.ff!=b.ff){
+		return a.ff>b.ff;
+	
+	}
+	else{
+		return a.ss<b.ss;
+	}
+}
+
 void solve(){
-	int n;
-	cin>>n;
-	cout<<2*n;
 
 }
 
 signed main(){
+
 	#ifndef ONLINE_JUDGE
 		freopen("input.txt","r",stdin);
 		freopen("output.txt","w",stdout);
 	#endif
 
       ios_base::sync_with_stdio(0);cin.tie(0);
-      int t = 1;
+      int t=1;
 //	  prime_sieve();
-      
+
       cin >> t;
       
       for(int i=1;i<=t;i++){
       	#ifdef case
         cout << "Case #" << i << ": ";
-	#endif
+				#endif
         solve();
       }
 
 }
+
+
